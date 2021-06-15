@@ -277,6 +277,7 @@ header .container img {
 }
 .courses .container .card-container .row .col-6 {
   margin-top: 40px;
+  padding: 15px 0;
 }
 .courses .container .card-container .row .col-6 .row img {
   width: 120px;
@@ -293,6 +294,13 @@ header .container img {
 }
 .courses .container .card-container .row .col-6 .row .col-9 .info-container .stats span .far {
   margin-right: 10px;
+}
+.courses .container .card-container .row .col-6:hover {
+  background-color: white;
+  cursor: pointer;
+}
+.courses .container .card-container .row .col-6:hover h5, .courses .container .card-container .row .col-6:hover h6 {
+  color: #25AB94;
 }
 .courses .container button {
   margin-top: 60px;

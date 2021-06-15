@@ -8,6 +8,7 @@
             .row {
                 .col-6 {
                     margin-top: 40px;
+                    padding: 15px 0;
                     .row {
                         img {
                             width: 120px;
@@ -33,6 +34,13 @@
                                 }
                             }
                         }
+                    }
+                }
+                .col-6:hover {
+                    background-color: white;
+                    cursor: pointer;
+                    h5, h6 {
+                        color: #25AB94;
                     }
                 }
             }
