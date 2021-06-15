@@ -210,3 +210,25 @@ header .container img {
   left: 150px;
   top: 7px;
 }
+
+/* Jumbotron */
+.jumbotron {
+  margin: 25px auto 0 auto;
+  width: 80%;
+}
+.jumbotron .row .col-5 {
+  padding-left: 0;
+}
+.jumbotron .row .col-5 h1, .jumbotron .row .col-5 p {
+  width: 90%;
+}
+.jumbotron .row .col-5 p {
+  margin-top: 20px;
+}
+.jumbotron .row .col-7 {
+  padding-right: 0;
+  text-align: end;
+}
+.jumbotron .row .col-7 img {
+  border-radius: 50%;
+}

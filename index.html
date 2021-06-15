@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./src/img/favicon-32x32.png" type="image/x-icon">
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
         integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
@@ -13,18 +14,20 @@
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <!-- SCSS -->
     <link rel="stylesheet" href="./dist/css/app.css">
-    <title>Midterm Project</title>
+    <title>MaxCoach</title>
 </head>
 
 <body>
     <div id="app">
+        <!-- header section -->
         <header class="d-flex align-items-center">
             <div class="container">
                 <div class="row justify-content-between">
                     <img src="./src/img/dark-logo.png" alt="">
                     <div class="navbar">
                         <ul class="d-flex flex-row">
-                            <li class="text-cod-grey" v-for="link in navbarLinks">{{ link }} <i class="fas fa-chevron-down"></i></li>
+                            <li class="text-cod-grey" v-for="link in navbarLinks">{{ link }} <i
+                                    class="fas fa-chevron-down"></i></li>
                             <i class="far fa-user-circle text-cod-grey"></i>
                         </ul>
                         <div class="searchbar position-relative">
@@ -35,6 +38,22 @@
                 </div>
             </div>
         </header>
+        <!-- /header section -->
+
+        <main>
+            <div class="container jumbotron bg-white">
+                <div class="row">
+                    <div class="col-5">
+                        <h1 class="font-weight-bold">Distant learning for further expansion</h1>
+                        <p>Learning is a life-long journey that in fact we never find the terminate stop. Stop
+                            searching, enjoy the process.</p>
+                    </div>
+                    <div class="col-7">
+                        <img src="./src/img/about-me-profile-ohm4dxoearqbxny7q3bq1pzbdgofdx0tobbeqcvzd0.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </main>
     </div>
     <!-- VueJs -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>

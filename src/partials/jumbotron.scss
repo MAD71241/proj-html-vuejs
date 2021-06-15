@@ -1,0 +1,25 @@
+/* Jumbotron */
+
+.jumbotron {
+    margin: 25px auto 0 auto;
+    width: 80%;
+    .row {
+        .col-5 {
+            padding-left: 0;
+            h1, p {
+                width: 90%;
+            }
+            p {
+                margin-top: 20px;
+            }
+
+        }
+        .col-7 {
+            padding-right: 0;
+            text-align: end;
+            img {
+                border-radius: 50%;
+            }
+        }
+    }
+}
