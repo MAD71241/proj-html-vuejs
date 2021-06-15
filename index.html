@@ -68,7 +68,7 @@
                                 class="portrait" alt="">
                             <img style="left: 0; bottom: 50%;" class="position-absolute" src="./src/img/maxcoach-shape-08.png" alt="">
                             <img style="left: 0; bottom: 25%;" class="position-absolute" src="./src/img/maxcoach-shape-08.png" alt="">
-                            <img style="bottom: 10px; right: 20px;" class="position-absolute" src="./src/img/maxcoach-shape-07.png" alt="">
+                            <img style="width: 25%; bottom: 0; right: 70px;" class="position-absolute" src="./src/img/maxcoach-shape-07.png" alt="">
                             <img style="top: 20%;" class="position-absolute" src="./src/img/maxcoach-shape-02.png" alt="">
                         </div>
                     </div>
@@ -83,15 +83,15 @@
                     <h3 class="font-weight-bold">Featured Online Courses</h3>
                     <div class="card-container">
                         <div class="row">
-                            <div class="col-6">
-                                <div class="row">
-                                        <img src="./src/img/stock-full-hd-01-480x298.jpg" alt="">
+                            <div v-for="course in courses" class="col-6">
+                                <div class="row justify-content-end ml-0">
+                                        <img :src="'./src/img/'+course.imagepath+coursesImgSize+coursesImgExt" alt="">
                                     <div class="col-9">
                                         <div class="info-container text-left">
-                                            <div class="price text-mountain-meadow"><h5 class="font-weight-bold">$ 40.00</h5></div>
-                                            <div class="card-title"><h6>learning to write as a professional author</h6></div>
+                                            <div class="price text-mountain-meadow"><h5 class="font-weight-bold">$ {{course.price}}</h5></div>
+                                            <div class="card-title"><h6>{{course.title}}</h6></div>
                                             <div class="stats">
-                                                <span><i class="far fa-file-alt"></i> 20 lessons</span><span><i class="far fa-user" style="margin: 0 10px;"></i> 50 students</span>
+                                                <span><i class="far fa-file-alt"></i> {{course.lessons}}</span><span><i class="far fa-user" style="margin: 0 10px;"></i> {{course.students}}</span>
                                             </div>
                                         </div>
                                     </div>
