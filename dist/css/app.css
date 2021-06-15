@@ -163,8 +163,8 @@
 /* Header IMG */
 header {
   height: 90px;
-  -o-box-shadow: 0px 6px 23px -4px #D1D1D1;
-  box-shadow: 0px 6px 23px -4px #D1D1D1;
+  -o-box-shadow: 0px 6px 23px -4px #d1d1d1;
+  box-shadow: 0px 6px 23px -4px #d1d1d1;
 }
 header .container .row {
   margin: 0;
@@ -190,7 +190,14 @@ header .container .row .navbar ul .fa-user-circle {
 header .container .row .navbar .searchbar input {
   border: none;
   height: 45px;
+  width: 200px;
   background-color: #f5f5f5;
+  font-size: 12px;
+  padding: 20px;
+}
+header .container .row .navbar .searchbar input:focus {
+  outline: none;
+  box-shadow: 0 0 10px #3F3A64;
 }
 header .container img {
   width: 180px;
