@@ -158,3 +158,35 @@
 .text-eunry {
   color: #C99F8E;
 }
+
+/************** HEADER **************/
+/* Header IMG */
+header {
+  height: 90px;
+  background-color: red;
+}
+header .container .row {
+  margin: 0;
+  align-items: center;
+}
+header .container .row .navbar ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+  align-items: center;
+}
+header .container .row .navbar ul li {
+  margin: 0 10px;
+}
+header .container img {
+  height: 80%;
+}
+
+.fa, .fab, .fal, .far, .fas {
+  display: inline-flex;
+}
+
+.fa-user-circle {
+  align-self: center;
+  margin: 0 10px;
+}

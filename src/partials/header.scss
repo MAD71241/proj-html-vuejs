@@ -1,0 +1,35 @@
+/************** HEADER **************/
+/* Header IMG */
+
+header {
+    height: 90px;
+    background-color: red;
+    .container {
+        .row {
+            margin: 0;
+            align-items: center;
+            .navbar {
+                ul {
+                    list-style: none;
+                    padding: 0;
+                    margin-bottom: 0;
+                    align-items: center;
+                    li {
+                        margin: 0 10px;
+                    }
+                }
+            }
+        }
+        img {
+            height: 80%;
+        }
+    }
+}
+
+.fa, .fab, .fal, .far, .fas {
+    display: inline-flex;
+}
+.fa-user-circle {
+    align-self: center;
+    margin: 0 10px;
+}
