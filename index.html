@@ -79,27 +79,28 @@
             </div>
             <div class="courses bg-hintofred">
                 <div class="container text-center">
-                    <h6 class="text-uppercase font-weight-bold">Stimulated to learn?</h6>
-                    <h3 class="font-weight-bold">Featured Online Courses</h3>
+                    <h6 id="section-title" class="text-uppercase text-shady-lady font-weight-bold">Stimulated to learn?</h6>
+                    <h3 class="font-weight-bold text-gunpowder">Featured Online Courses</h3>
                     <div class="card-container">
                         <div class="row">
                             <div v-for="course in courses" class="col-6">
                                 <div class="row justify-content-end ml-0">
-                                        <img :src="'./src/img/'+course.imagepath+coursesImgSize+coursesImgExt" alt="">
+                                        <img :src="'./src/img/'+course.imgpath" alt="">
                                     <div class="col-9">
                                         <div class="info-container text-left">
-                                            <div class="price text-mountain-meadow"><h5 class="font-weight-bold">$ {{course.price}}</h5></div>
-                                            <div class="card-title"><h6>{{course.title}}</h6></div>
+                                            <div v-if="course.price === 0" class="price text-mountain-meadow"><h5 class="font-weight-bold">Free</h5></div>
+                                            <div v-else class="price text-mountain-meadow"><h5 class="font-weight-bold">$ {{course.price}}.<span style="font-size: 14px;">00</span></h5></div>
+                                            <div class="card-title"><h6 class="font-weight-bold text-gunpowder" >{{course.title}}</h6></div>
                                             <div class="stats">
-                                                <span><i class="far fa-file-alt"></i> {{course.lessons}}</span><span><i class="far fa-user" style="margin: 0 10px;"></i> {{course.students}}</span>
+                                                <span class="text-shady-lady font-weight-bold"><i class="far fa-file-alt"></i> {{course.lessons}} lessons</span><span class="text-shady-lady font-weight-bold"><i class="far fa-user" style="margin: 0 10px;"></i> {{course.students}} students</span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            
                         </div>
                     </div>
+                    <button class="rounded bg-mountain-meadow text-white font-weight-bold">View all courses <i class="fa fa-arrow-right" aria-hidden="true"></i> </button>
                 </div>
             </div>
         </main>

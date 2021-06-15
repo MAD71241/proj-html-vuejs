@@ -272,11 +272,15 @@ header .container img {
 }
 
 /************** COURSES ***************/
+.courses .container #section-title {
+  padding-top: 80px;
+}
 .courses .container .card-container .row .col-6 {
   margin-top: 40px;
 }
 .courses .container .card-container .row .col-6 .row img {
-  width: 20%;
+  width: 120px;
+  height: 120px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 50%;
@@ -284,8 +288,27 @@ header .container img {
 .courses .container .card-container .row .col-6 .row .col-9 .info-container .card-title h6 {
   width: 80%;
 }
+.courses .container .card-container .row .col-6 .row .col-9 .info-container .stats span {
+  font-size: 14px;
+}
 .courses .container .card-container .row .col-6 .row .col-9 .info-container .stats span .far {
   margin-right: 10px;
+}
+.courses .container button {
+  margin-top: 60px;
+  border: none;
+  padding: 20px 100px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  transition: background-color 0.5s ease-out;
+}
+.courses .container button .fa-arrow-right {
+  margin-left: 10px;
+}
+.courses .container button:hover {
+  color: white;
+  background-color: #3F3A64;
+  cursor: pointer;
 }
 
 body {
