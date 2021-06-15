@@ -26,7 +26,7 @@
                         <ul class="d-flex flex-row">
                             <li v-for="link in navbarLinks">{{ link }} <i class="fas fa-chevron-down"></i></li>
                             <i class="far fa-user-circle"></i>
-                            <input type="text">
+                            <input type="text" placeholder="Search..." v-model="searchQuery">
                         </ul>
                     </div>
                 </div>
