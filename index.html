@@ -24,10 +24,13 @@
                     <img src="./src/img/dark-logo.png" alt="">
                     <div class="navbar">
                         <ul class="d-flex flex-row">
-                            <li v-for="link in navbarLinks">{{ link }} <i class="fas fa-chevron-down"></i></li>
-                            <i class="far fa-user-circle"></i>
-                            <input type="text" placeholder="Search..." v-model="searchQuery">
+                            <li class="text-cod-grey" v-for="link in navbarLinks">{{ link }} <i class="fas fa-chevron-down"></i></li>
+                            <i class="far fa-user-circle text-cod-grey"></i>
                         </ul>
+                        <div class="searchbar position-relative">
+                            <input class="rounded" type="text" placeholder="Search..." v-model="searchQuery">
+                            <i class="text-royal-blue fas fa-search position-absolute"></i>
+                        </div>
                     </div>
                 </div>
             </div>

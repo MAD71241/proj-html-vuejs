@@ -163,7 +163,8 @@
 /* Header IMG */
 header {
   height: 90px;
-  background-color: red;
+  -o-box-shadow: 0px 6px 23px -4px #D1D1D1;
+  box-shadow: 0px 6px 23px -4px #D1D1D1;
 }
 header .container .row {
   margin: 0;
@@ -179,17 +180,33 @@ header .container .row .navbar ul {
   align-items: center;
 }
 header .container .row .navbar ul li {
-  margin: 0 10px;
+  margin: 0 20px 0 10px;
+}
+header .container .row .navbar ul li:hover,
+header .container .row .navbar ul .fa-user-circle {
+  cursor: pointer;
+}
+header .container .row .navbar .searchbar input {
+  background-color: #f5f5f5;
 }
 header .container img {
-  height: 80%;
+  width: 180px;
 }
 
-.fa, .fab, .fal, .far, .fas {
+.fa,
+.fab,
+.fal,
+.far,
+.fas {
   display: inline-flex;
 }
 
 .fa-user-circle {
   align-self: center;
   margin: 0 10px;
+}
+
+.fa-search {
+  left: 150px;
+  top: 7px;
 }
