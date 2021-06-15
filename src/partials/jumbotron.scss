@@ -7,7 +7,7 @@
     .row {
         .col-5 {
             padding-left: 0;
-            h1, p {
+            h1 {
                 width: 90%;
             }
             p {
@@ -17,6 +17,28 @@
                 border: none;
                 padding: 15px 20px;
                 margin-bottom: 20px;
+                -webkit-transition: background-color 0.5s ease-out;
+                -moz-transition: background-color 0.5s ease-out;
+                -o-transition: background-color 0.5s ease-out;
+                transition: background-color 0.5s ease-out;
+                .fa-download {
+                    padding: 0 10px;
+                }
+            }
+            button:hover {
+                color: white;
+                background-color: #3F3A64;
+                cursor: pointer;
+            }
+            span {
+                -webkit-transition: color 0.5s ease-out;
+                -moz-transition: color 0.5s ease-out;
+                -o-transition: color 0.5s ease-out;
+                transition: color 0.5s ease-out;
+            }
+            span:hover {
+                color: #3F3A64;
+                cursor: pointer;
             }
 
         }
