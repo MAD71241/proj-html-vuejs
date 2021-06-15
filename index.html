@@ -31,9 +31,9 @@
                     <img src="./src/img/dark-logo.png" alt="">
                     <div class="navbar">
                         <ul class="d-flex flex-row">
-                            <li class="text-cod-grey" v-for="link in navbarLinks">{{ link }} <i
+                            <li class="text-gunpowder" v-for="link in navbarLinks">{{ link }} <i
                                     class="fas fa-chevron-down"></i></li>
-                            <i class="far fa-user-circle text-cod-grey"></i>
+                            <i class="far fa-user-circle text-gunpowder"></i>
                         </ul>
                         <div class="searchbar position-relative">
                             <input class="rounded" type="text" placeholder="Search..." v-model="searchQuery">
@@ -51,17 +51,29 @@
                     <div class="col-5 d-flex align-items-center">
                         <div class="text-container">
                             <h1 class="font-weight-bold text-gunpowder">Distant learning for further expansion</h1>
-                            <p class="text-gunpowder">Learning is a life-long journey that in fact we never find the terminate stop. Stop
+                            <p class="text-gunpowder">Learning is a life-long journey that in fact we never find the
+                                terminate stop. Stop
                                 searching, enjoy the process.</p>
                             <button class="rounded bg-mountain-meadow text-white font-weight-bold"><i
                                     class="fas fa-download"></i> Download free guide
                             </button>
-                            <h6 class="text-gunpowder">Have questions? <span class="font-weight-bold text-mountain-meadow">Get Free Sample! <i
+                            <h6 class="text-gunpowder">Have questions? <span
+                                    class="font-weight-bold text-mountain-meadow">Get Free Sample! <i
                                         class="fa fa-arrow-right" aria-hidden="true"></i> </span></h6>
                         </div>
                     </div>
                     <div class="col-7">
-                        <img src="./src/img/about-me-profile-ohm4dxoearqbxny7q3bq1pzbdgofdx0tobbeqcvzd0.jpg" alt="">
+                        <div class="portrait-container">
+                            <img src="./src/img/about-me-profile-ohm4dxoearqbxny7q3bq1pzbdgofdx0tobbeqcvzd0.jpg"
+                                class="portrait" alt="">
+                            <img style="left: 0; bottom: 50%;" class="position-absolute" src="./src/img/maxcoach-shape-08.png" alt="">
+                            <img style="left: 0; bottom: 25%;" class="position-absolute" src="./src/img/maxcoach-shape-08.png" alt="">
+                            <img style="bottom: 10px; right: 20px;" class="position-absolute" src="./src/img/maxcoach-shape-07.png" alt="">
+                            <img style="top: 20%;" class="position-absolute" src="./src/img/maxcoach-shape-02.png" alt="">
+                        </div>
+                    </div>
+                    <div class="testimonials d-flex justify-content-around align-items-center">
+                        <img v-for="logo in logos" class="testimonial-logo" :src="'./src/img/'+logo+'.png'" alt="">
                     </div>
                 </div>
             </div>

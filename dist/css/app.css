@@ -254,8 +254,14 @@ header .container img {
   padding-right: 0;
   text-align: end;
 }
-.jumbotron .row .col-7 img {
+.jumbotron .row .col-7 .portrait {
   border-radius: 50%;
+  position: relative;
+  z-index: 1;
+}
+.jumbotron .row .testimonials {
+  margin-top: 40px;
+  width: 100%;
 }
 
 body {
