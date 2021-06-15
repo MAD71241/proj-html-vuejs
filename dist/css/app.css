@@ -180,6 +180,7 @@ header .container .row .navbar ul {
   align-items: center;
 }
 header .container .row .navbar ul li {
+  font-weight: bold;
   margin: 0 20px 0 10px;
 }
 header .container .row .navbar ul li:hover,
@@ -211,6 +212,7 @@ header .container img {
   top: 7px;
 }
 
+/************** MAIN **************/
 /* Jumbotron */
 .jumbotron {
   margin: 25px auto 0 auto;
@@ -224,6 +226,11 @@ header .container img {
 }
 .jumbotron .row .col-5 p {
   margin-top: 20px;
+}
+.jumbotron .row .col-5 button {
+  border: none;
+  padding: 15px 20px;
+  margin-bottom: 20px;
 }
 .jumbotron .row .col-7 {
   padding-right: 0;

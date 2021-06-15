@@ -1,3 +1,4 @@
+/************** MAIN **************/
 /* Jumbotron */
 
 .jumbotron {
@@ -11,6 +12,11 @@
             }
             p {
                 margin-top: 20px;
+            }
+            button {
+                border: none;
+                padding: 15px 20px;
+                margin-bottom: 20px;
             }
 
         }
