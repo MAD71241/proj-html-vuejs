@@ -271,6 +271,22 @@ header .container img {
   width: 100%;
 }
 
+.courses .container .card-container .row .col-6 {
+  margin-top: 40px;
+}
+.courses .container .card-container .row .col-6 .row img {
+  width: 20%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+.courses .container .card-container .row .col-6 .row .col-9 .info-container .card-title h6 {
+  width: 80%;
+}
+.courses .container .card-container .row .col-6 .row .col-9 .info-container .stats span .far {
+  margin-right: 10px;
+}
+
 body {
   font-family: "Poppins", sans-serif;
 }

@@ -1,0 +1,35 @@
+.courses {
+    .container {
+        .card-container {
+            .row {
+                .col-6 {
+                    margin-top: 40px;
+                    .row {
+                        img {
+                            width: 20%;
+                            object-fit: cover;
+                            border-radius: 50%;
+                        }
+                        .col-9 {
+                            .info-container {
+                                .card-title {
+                                    h6 {
+                                        width: 80%;
+                                    }
+                                }
+
+                                .stats {
+                                    span {
+                                        .far {
+                                            margin-right: 10px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
