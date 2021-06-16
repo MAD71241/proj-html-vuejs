@@ -1,3 +1,47 @@
 /************** CAROUSEL **************/
+.carousel-top {
+    .container {
+        .row {
+            .title-container {
+                padding-top: 100px;
+                padding-bottom: 40px;
+            }
+        }
+    }
+    .row {
+        width: 90%;
+        margin: auto;
+        .col-4 {
+            .identify {
+                padding: 20px 0;
+                img {
+                    border-radius: 50%;
+                    width: 80px;
+                }
+                .text-container {
+                    justify-content: center;
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+}
 
-/************** TOP **************/
+.inactive-card, .active-card {
+    width: 100%;
+    padding: 20px;
+}
+
+.inactive-card {
+    opacity: 0.7;
+}
+
+.fa-circle {
+    margin: 0 10px;
+}
+
+.fa-circle:hover {
+    cursor: pointer;
+}

@@ -1,5 +1,10 @@
+/************ GENERAL RULES ************/
 body {
   font-family: "Poppins", sans-serif;
+}
+
+.even {
+  justify-content: space-evenly;
 }
 
 /************** COLOR CUBE **************/
@@ -361,4 +366,41 @@ header .container img {
 }
 
 /************** CAROUSEL **************/
-/************** TOP **************/
+.carousel-top .container .row .title-container {
+  padding-top: 100px;
+  padding-bottom: 40px;
+}
+.carousel-top .row {
+  width: 90%;
+  margin: auto;
+}
+.carousel-top .row .col-4 .identify {
+  padding: 20px 0;
+}
+.carousel-top .row .col-4 .identify img {
+  border-radius: 50%;
+  width: 80px;
+}
+.carousel-top .row .col-4 .identify .text-container {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.inactive-card, .active-card {
+  width: 100%;
+  padding: 20px;
+}
+
+.inactive-card {
+  opacity: 0.7;
+}
+
+.fa-circle {
+  margin: 0 10px;
+}
+
+.fa-circle:hover {
+  cursor: pointer;
+}

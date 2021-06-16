@@ -1,6 +1,10 @@
-
+/************ GENERAL RULES ************/
 body {
     font-family: "Poppins", sans-serif;
+}
+
+.even {
+    justify-content: space-evenly
 }
 
 @import "./partials/palette.scss";
