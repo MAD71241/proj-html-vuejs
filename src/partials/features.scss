@@ -12,6 +12,7 @@
                 }
                 .info-container {
                     p {
+                        font-size: 14px;
                     }
                 }
             }
@@ -27,6 +28,19 @@
                 }
                 img:nth-of-type(2):hover {
                     cursor: pointer;
+                }
+            }
+            .col-4 {
+                h6 {
+                    margin-top: 50px;
+                }
+                h2 {
+                    font-size: 2.5rem;
+                    margin: 20px 0;
+                }
+                p {
+                    margin-top: 20px;
+                    margin-bottom: 40px
                 }
             }
         }

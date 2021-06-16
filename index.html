@@ -130,12 +130,13 @@
                 </div>
                 <div class="container">
                     <div class="row">
-                        <div v-for="feature in features" class="col-4"> 
-                            <img :src="'./src/img/'+feature.imgpath" alt=""> 
+                        <div v-for="feature in features" class="col-4">
+                            <img :src="'./src/img/'+feature.imgpath" alt="">
                             <div class="info-container">
                                 <h5 class="text-gunpowder font-weight-bold">{{feature.title}}</h5>
                                 <p>{{feature.description}}</p>
-                                <a href="">{{feature.linkdescription}} <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                                <a href="">{{feature.linkdescription}} <i class="fa fa-arrow-right"
+                                        aria-hidden="true"></i></a>
                             </div>
                         </div>
                     </div>
@@ -144,7 +145,15 @@
                             <img class="position-relative" src="./src/img/home-2-popup-video-poster.jpg" alt="">
                             <img class="position-absolute" src="./src/img/icon-youtube-play.png" alt="">
                         </div>
-                        <div class="col-4"></div>
+                        <div class="col-4">
+                            <h6 class="font-weight-bold text-uppercase text-shady-lady">Get Started <span
+                                    class="font-weight-bold text-gunpowder">Effortlessly</span></h6>
+                            <h2 class="font-weight-bold text-gunpowder">Enjoy Our <span
+                                    class="font-weight-normal text-mountain-meadow"> Companionship</span></h2>
+                            <p>Sneek peek into what has in store for you on our online teaching and mentoring portal.
+                                Seek for some hidden hints of early-bird rewards as well.</p>
+                            <a href="">Download free guidebook <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
