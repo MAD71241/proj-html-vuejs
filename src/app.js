@@ -108,6 +108,31 @@ const app = new Vue({
             }
             ,
         ],
+        blogLinks: [
+            {
+                title: "Become a Better Blogger: Content Planning",
+                link: ""
+            }
+            ,            {
+                title: "Promoting Your Online Business on Pinterest",
+                link: ""
+            }
+            ,            {
+                title: "Gamification and Game-Based Learning",
+                link: ""
+            }
+            ,            {
+                title: "Designing an Online Course from Expert's Perspective",
+                link: ""
+            }
+            ,            {
+                title: "Why Online Courses Are The Future of Education",
+                link: ""
+            }
+            ,
+        ]
+        ,
+
     }
     ,
 
