@@ -62,6 +62,28 @@ const app = new Vue ({
             }
             ,
         ]
+        ,
+        features: [
+            {
+                title: "Customize Preferences",
+                description: "Learners are given the right to arrange and customize their study schedule and timetable based on preferencies.",
+                imgpath: "home-2-image-box-01.png",
+                linkdescription: "Start here"
+            }
+            ,            {
+                title: "Cloud Storage",
+                description: "You can store online lessons via online cloud or download to your device and revise lessons on the way.",
+                imgpath: "home-2-image-box-02.png",
+                linkdescription: "Get Free Quote"
+            }
+            ,            {
+                title: "Multimedia Channels",
+                description: "We provide study materials with various formats; video, audio, slides, doc, prints, books and applications.",
+                imgpath: "home-2-image-box-03.png",
+                linkdescription: "Start here"
+            }
+            ,
+        ]
     }
     ,
 
