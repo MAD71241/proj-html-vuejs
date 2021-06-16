@@ -2,9 +2,20 @@
     .container {
         .row {
             .col-3 {
-                padding: 25px;
+                padding: 70px 25px 70px 25px;
                 border-left: 1px solid lightgray;
                 border-right: 1px solid lightgray;
+                .stat-title {
+                    width: 65%;
+                    font-size: 18px;
+                    margin: 0 auto;
+                    padding-bottom: 15px;
+                }
+
+                h1 {
+                    padding-bottom: 15px;
+                    margin-bottom: 0;
+                }
                 h6:last-of-type {
                     font-size: 13px;
                 }

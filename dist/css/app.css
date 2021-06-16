@@ -422,9 +422,19 @@ header .container img {
 }
 
 .stats .container .row .col-3 {
-  padding: 25px;
+  padding: 70px 25px 70px 25px;
   border-left: 1px solid lightgray;
   border-right: 1px solid lightgray;
+}
+.stats .container .row .col-3 .stat-title {
+  width: 65%;
+  font-size: 18px;
+  margin: 0 auto;
+  padding-bottom: 15px;
+}
+.stats .container .row .col-3 h1 {
+  padding-bottom: 15px;
+  margin-bottom: 0;
 }
 .stats .container .row .col-3 h6:last-of-type {
   font-size: 13px;

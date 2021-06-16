@@ -65,6 +65,23 @@ var app = new Vue({
       description: "We provide study materials with various formats; video, audio, slides, doc, prints, books and applications.",
       imgpath: "home-2-image-box-03.png",
       linkdescription: "Start here"
+    }],
+    stats: [{
+      title: "Succesfully trained",
+      counter: 1790,
+      subject: "Enrolled Learners"
+    }, {
+      title: "Proudly Received",
+      counter: 19,
+      subject: "Countrywide awards"
+    }, {
+      title: "Firmly Established",
+      counter: 24,
+      subject: "Local branches"
+    }, {
+      title: "Getting Featured On",
+      counter: 1090,
+      subject: "Blog posts"
     }]
   },
   methods: {}

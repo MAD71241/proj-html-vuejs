@@ -224,7 +224,7 @@
                         <h3 class="font-weight-bold text-gunpowder">You can be your own guiding star with our help!</h3>
                         
                     </div>
-                    <div class="row">
+                    <div class="row justify-content-between">
                         <img src="./src/img/maxcoach-shape-01.png" alt="">
                         <button class="rounded bg-mountain-meadow text-white font-weight-bold">Get started now</button>
                         <img src="./src/img/maxcoach-shape-02.png" alt="">
@@ -234,10 +234,10 @@
             <div class="stats">
                 <div class="container">
                     <div class="row">
-                        <div class="col-3 text-center">
-                            <h6>Succesfully trained</h6>
-                            <h1 class="font-weight-bold text-mountain-meadow">1790</h1>
-                            <h6 class="text-uppercase text-gunpowder font-weight-bold">enrolled learners</h6>
+                        <div v-for="stat in stats" class="col-3 text-center">
+                            <h6 class="stat-title font-weight-bold">{{stat.title}}</h6>
+                            <h1 class="font-weight-bold text-mountain-meadow">{{stat.counter}}</h1>
+                            <h6 class="text-uppercase text-gunpowder font-weight-bold">{{stat.subject}}</h6>
                         </div>
                     </div>
                 </div>
