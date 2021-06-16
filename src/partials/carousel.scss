@@ -2,6 +2,7 @@
 .carousel-top {
     .container {
         .row {
+            padding-bottom: 40px;
             .title-container {
                 padding-top: 100px;
                 padding-bottom: 40px;
@@ -9,7 +10,6 @@
         }
     }
     .row {
-        width: 90%;
         margin: auto;
         .col-4 {
             .identify {
@@ -27,9 +27,22 @@
             }
         }
     }
+    .claim {
+        padding: 0 80px;
+    }
+    button {
+        margin-top: 60px;
+        padding: 10px 60px;
+        border: none;
+        height: 50px;
+    }
+    img {
+        object-fit: contain;
+    }
 }
 
-.inactive-card, .active-card {
+.inactive-card,
+.active-card {
     width: 100%;
     padding: 20px;
 }

@@ -366,12 +366,14 @@ header .container img {
 }
 
 /************** CAROUSEL **************/
+.carousel-top .container .row {
+  padding-bottom: 40px;
+}
 .carousel-top .container .row .title-container {
   padding-top: 100px;
   padding-bottom: 40px;
 }
 .carousel-top .row {
-  width: 90%;
   margin: auto;
 }
 .carousel-top .row .col-4 .identify {
@@ -387,8 +389,22 @@ header .container img {
   flex-direction: column;
   margin-left: 20px;
 }
+.carousel-top .claim {
+  padding: 0 80px;
+}
+.carousel-top button {
+  margin-top: 60px;
+  padding: 10px 60px;
+  border: none;
+  height: 50px;
+}
+.carousel-top img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 
-.inactive-card, .active-card {
+.inactive-card,
+.active-card {
   width: 100%;
   padding: 20px;
 }
