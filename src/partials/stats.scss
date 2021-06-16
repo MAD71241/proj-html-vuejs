@@ -1,0 +1,14 @@
+.stats {
+    .container {
+        .row {
+            .col-3 {
+                padding: 25px;
+                border-left: 1px solid lightgray;
+                border-right: 1px solid lightgray;
+                h6:last-of-type {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
