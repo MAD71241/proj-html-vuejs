@@ -4,6 +4,7 @@
     .container {
         padding-top: 80px;
         .row {
+            position: relative;
             .col-4 {
                 ul {
                     padding-left: 0;
@@ -19,9 +20,36 @@
                         }
                     }
                     li:hover {
-                        a, .fa {
-                            color: #1FAD96;
+                        a,
+                        .fa {
+                            color: #1fad96;
                         }
+                    }
+                }
+            }
+            .col-8 {
+                position: absolute;
+                right: 0;
+                top: -20px;
+                .info-container {
+                    width: 40%;
+                    margin: auto;
+                    padding-bottom: 40px;
+                    margin-bottom: 80px;
+                    img {
+                        width: 100%;
+                    }
+                    h6, .stats {
+                        padding: 0 20px;
+                    }
+                    h6:first-of-type {
+                        padding-top: 20px;
+                    }
+                    h6 {
+                        width: 95%;
+                    }
+                    .stats {
+                        font-size: 14px;
                     }
                 }
             }

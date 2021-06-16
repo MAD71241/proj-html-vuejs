@@ -452,6 +452,9 @@ header .container img {
 .featured-blog-posts .container {
   padding-top: 80px;
 }
+.featured-blog-posts .container .row {
+  position: relative;
+}
 .featured-blog-posts .container .row .col-4 ul {
   padding-left: 0;
   list-style: none;
@@ -466,6 +469,33 @@ header .container img {
   margin-bottom: 0;
   text-decoration: none;
 }
-.featured-blog-posts .container .row .col-4 ul li:hover a, .featured-blog-posts .container .row .col-4 ul li:hover .fa {
-  color: #1FAD96;
+.featured-blog-posts .container .row .col-4 ul li:hover a,
+.featured-blog-posts .container .row .col-4 ul li:hover .fa {
+  color: #1fad96;
+}
+.featured-blog-posts .container .row .col-8 {
+  position: absolute;
+  right: 0;
+  top: -20px;
+}
+.featured-blog-posts .container .row .col-8 .info-container {
+  width: 40%;
+  margin: auto;
+  padding-bottom: 40px;
+  margin-bottom: 80px;
+}
+.featured-blog-posts .container .row .col-8 .info-container img {
+  width: 100%;
+}
+.featured-blog-posts .container .row .col-8 .info-container h6, .featured-blog-posts .container .row .col-8 .info-container .stats {
+  padding: 0 20px;
+}
+.featured-blog-posts .container .row .col-8 .info-container h6:first-of-type {
+  padding-top: 20px;
+}
+.featured-blog-posts .container .row .col-8 .info-container h6 {
+  width: 95%;
+}
+.featured-blog-posts .container .row .col-8 .info-container .stats {
+  font-size: 14px;
 }

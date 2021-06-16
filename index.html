@@ -247,6 +247,7 @@
             <div class="featured-blog-posts bg-hintofred">
                 <div class="container">
                     <div class="row">
+                        <!-- left section -->
                         <div class="col-4">
                             <h6 class="text-uppercase text-gunpowder">Enjoyable insights</h6>
                             <h4 class="font-weight-bold text-gunpowder">Most Viewed <span
@@ -254,13 +255,42 @@
                             <ul>
                                 <li class="font-weight-bold" v-for="link in blogLinks">
                                     <div class="text-container d-flex align-items-center">
-                                        <i class="fa fa-arrow-right" aria-hidden="true"></i><a class="text-gunpowder" href="#">{{ link.title }}</a>
+                                        <i class="fa fa-arrow-right" aria-hidden="true"></i><a class="text-gunpowder"
+                                            href="#">{{ link.title }}</a>
                                     </div>
                                 </li>
                             </ul>
                         </div>
-                        <div class="col-4"></div>
-                        <div class="col-4"></div>
+                        <!-- /left section -->
+
+                        <!-- featured blog posts -->
+                        <div class="col-8">
+                            <div class="row">
+                                <div class="info-container bg-white">
+                                    <img src="./src/img/artist-blog-03-480x352.jpeg" alt="">
+                                    <h6 class="text-uppercase text-shady-lady font-weight-bold">artist</h6>
+                                    <h6 class="text-gunpowder font-weight-bold">Brush Strokes Energize Trees in Paintings
+                                    </h6>
+                                    <div class="stats">
+                                        <span class="text-shady-lady font-weight-bold"><i class="far fa-calendar"></i>
+                                            May 25, 2020</span><span class="text-shady-lady font-weight-bold"><i
+                                                class="far fa-eye" style="margin: 0 10px;"></i>views</span>
+                                    </div>
+                                </div>
+                                <div class="info-container bg-white rounded">
+                                    <img src="./src/img/artist-blog-03-480x352.jpeg" alt="">
+                                    <h6 class="text-uppercase text-shady-lady font-weight-bold">artist</h6>
+                                    <h6 class="text-gunpowder font-weight-bold">Brush Strokes Energize Trees in Paintings
+                                    </h6>
+                                    <div class="stats">
+                                        <span class="text-shady-lady font-weight-bold"><i class="far fa-calendar"></i>
+                                            May 25, 2020</span><span class="text-shady-lady font-weight-bold"><i
+                                                class="far fa-eye" style="margin: 0 10px;"></i>views</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /featured blog posts -->
                     </div>
                 </div>
             </div>
