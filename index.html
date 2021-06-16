@@ -266,26 +266,15 @@
                         <!-- featured blog posts -->
                         <div class="col-8">
                             <div class="row">
-                                <div class="info-container bg-white">
-                                    <img src="./src/img/artist-blog-03-480x352.jpeg" alt="">
-                                    <h6 class="text-uppercase text-shady-lady font-weight-bold">artist</h6>
-                                    <h6 class="text-gunpowder font-weight-bold">Brush Strokes Energize Trees in Paintings
+                                <div class="info-container bg-white" v-for="post in featuredPosts">
+                                    <img :src="'./src/img/'+post.imglink+post.imgext" alt="">
+                                    <h6 class="text-uppercase text-shady-lady font-weight-bold">{{post.kind}}</h6>
+                                    <h6 class="text-gunpowder font-weight-bold">{{post.title}}
                                     </h6>
                                     <div class="stats">
                                         <span class="text-shady-lady font-weight-bold"><i class="far fa-calendar"></i>
-                                            May 25, 2020</span><span class="text-shady-lady font-weight-bold"><i
-                                                class="far fa-eye" style="margin: 0 10px;"></i>views</span>
-                                    </div>
-                                </div>
-                                <div class="info-container bg-white rounded">
-                                    <img src="./src/img/artist-blog-03-480x352.jpeg" alt="">
-                                    <h6 class="text-uppercase text-shady-lady font-weight-bold">artist</h6>
-                                    <h6 class="text-gunpowder font-weight-bold">Brush Strokes Energize Trees in Paintings
-                                    </h6>
-                                    <div class="stats">
-                                        <span class="text-shady-lady font-weight-bold"><i class="far fa-calendar"></i>
-                                            May 25, 2020</span><span class="text-shady-lady font-weight-bold"><i
-                                                class="far fa-eye" style="margin: 0 10px;"></i>views</span>
+                                            {{post.date}}</span><span class="text-shady-lady font-weight-bold"><i
+                                                class="far fa-eye" style="margin: 0 10px;"></i>{{post.views}} views</span>
                                     </div>
                                 </div>
                             </div>

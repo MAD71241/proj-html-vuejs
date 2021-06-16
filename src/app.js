@@ -132,6 +132,25 @@ const app = new Vue({
             ,
         ]
         ,
+        featuredPosts: [
+            {
+                kind: "artist",
+                imglink: "blog-01-480x352",
+                imgext: ".jpeg",
+                title: "Brush Strokes Energize Trees in Paintings",
+                date: "May 15, 2020",
+                views: 688
+            }
+            ,            {
+                kind: "artist",
+                imglink: "blog-02-480x352",
+                imgext: ".jpg",
+                title: "Pocket-Sized Notebooks Hold Miniature Paintings",
+                date: "May 15, 2020",
+                views: 603
+            }
+            ,
+        ]
 
     }
     ,
