@@ -66,10 +66,14 @@
                         <div class="portrait-container">
                             <img src="./src/img/about-me-profile-ohm4dxoearqbxny7q3bq1pzbdgofdx0tobbeqcvzd0.jpg"
                                 class="portrait" alt="">
-                            <img style="left: 0; bottom: 50%;" class="position-absolute" src="./src/img/maxcoach-shape-08.png" alt="">
-                            <img style="left: 0; bottom: 25%;" class="position-absolute" src="./src/img/maxcoach-shape-08.png" alt="">
-                            <img style="width: 25%; bottom: 0; right: 70px;" class="position-absolute" src="./src/img/maxcoach-shape-07.png" alt="">
-                            <img style="top: 20%;" class="position-absolute" src="./src/img/maxcoach-shape-02.png" alt="">
+                            <img style="left: 0; bottom: 50%;" class="position-absolute"
+                                src="./src/img/maxcoach-shape-08.png" alt="">
+                            <img style="left: 0; bottom: 25%;" class="position-absolute"
+                                src="./src/img/maxcoach-shape-08.png" alt="">
+                            <img style="width: 25%; bottom: 0; right: 70px;" class="position-absolute"
+                                src="./src/img/maxcoach-shape-07.png" alt="">
+                            <img style="top: 20%;" class="position-absolute" src="./src/img/maxcoach-shape-02.png"
+                                alt="">
                         </div>
                     </div>
                     <div class="testimonials d-flex justify-content-around align-items-center">
@@ -79,20 +83,32 @@
             </div>
             <div class="courses bg-hintofred">
                 <div class="container text-center">
-                    <h6 id="section-title" class="text-uppercase text-shady-lady font-weight-bold">Stimulated to learn?</h6>
+                    <h6 id="section-title" class="text-uppercase text-shady-lady">Stimulated to learn?
+                    </h6>
                     <h3 class="font-weight-bold text-gunpowder">Featured Online Courses</h3>
                     <div class="card-container">
                         <div class="row">
                             <div v-for="course in courses" class="col-6">
                                 <div class="row justify-content-end ml-0">
-                                        <img :src="'./src/img/'+course.imgpath" alt="">
+                                    <img :src="'./src/img/'+course.imgpath" alt="">
                                     <div class="col-9">
                                         <div class="info-container text-left">
-                                            <div v-if="course.price === 0" class="price text-mountain-meadow"><h5 class="font-weight-bold">Free</h5></div>
-                                            <div v-else class="price text-mountain-meadow"><h5 class="font-weight-bold">$ {{course.price}}.<span style="font-size: 14px;">00</span></h5></div>
-                                            <div class="card-title"><h6 class="font-weight-bold text-gunpowder" >{{course.title}}</h6></div>
+                                            <div v-if="course.price === 0" class="price text-mountain-meadow">
+                                                <h5 class="font-weight-bold">Free</h5>
+                                            </div>
+                                            <div v-else class="price text-mountain-meadow">
+                                                <h5 class="font-weight-bold">$ {{course.price}}.<span
+                                                        style="font-size: 14px;">00</span></h5>
+                                            </div>
+                                            <div class="card-title">
+                                                <h6 class="font-weight-bold text-gunpowder">{{course.title}}</h6>
+                                            </div>
                                             <div class="stats">
-                                                <span class="text-shady-lady font-weight-bold"><i class="far fa-file-alt"></i> {{course.lessons}} lessons</span><span class="text-shady-lady font-weight-bold"><i class="far fa-user" style="margin: 0 10px;"></i> {{course.students}} students</span>
+                                                <span class="text-shady-lady font-weight-bold"><i
+                                                        class="far fa-file-alt"></i> {{course.lessons}}
+                                                    lessons</span><span class="text-shady-lady font-weight-bold"><i
+                                                        class="far fa-user" style="margin: 0 10px;"></i>
+                                                    {{course.students}} students</span>
                                             </div>
                                         </div>
                                     </div>
@@ -100,7 +116,30 @@
                             </div>
                         </div>
                     </div>
-                    <button class="rounded bg-mountain-meadow text-white font-weight-bold">View all courses <i class="fa fa-arrow-right" aria-hidden="true"></i> </button>
+                    <button class="rounded bg-mountain-meadow text-white font-weight-bold">View all courses <i
+                            class="fa fa-arrow-right" aria-hidden="true"></i> </button>
+                </div>
+            </div>
+            <div class="features bg-white">
+                <div class="title-container text-center">
+                    <h6 class="text-uppercase">Maxcoach available courses</h6>
+                    <h3 class="font-weight-bold text-gunpowder">Access <span
+                            class="font-weight-light text-mountain-meadow"> Smart Tutoring </span> Programs for
+                        Benefits.
+                    </h3>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4"> <img src="./src/img/home-2-image-box-01.png" alt=""> 
+                            <div class="info-container">
+                                <h5 class="text-gunpowder font-weight-bold">Customize Preferences</h5>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora sit atque in? Dicta,
+                                    quis minima?</p>
+                                <a href="">Start Here <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </main>

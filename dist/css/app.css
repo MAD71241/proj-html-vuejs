@@ -319,6 +319,14 @@ header .container img {
   cursor: pointer;
 }
 
+/************** FEATURES ***************/
+.features .title-container {
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
+.features .container .row .col-4 img {
+  margin-bottom: 40px;
+}
 body {
   font-family: "Poppins", sans-serif;
 }
