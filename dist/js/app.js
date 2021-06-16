@@ -98,7 +98,7 @@ var app = new Vue({
 
         if (base < target) {
           counter.innerText = Math.ceil(base + incremental);
-          setTimeout(updateCounter, 10);
+          setTimeout(updateCounter, 2);
         }
       };
 

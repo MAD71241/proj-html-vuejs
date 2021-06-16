@@ -126,7 +126,7 @@ const app = new Vue({
                 const incremental = 1;
                 if (base < target) {
                     counter.innerText = Math.ceil(base + incremental)
-                    setTimeout(updateCounter, 10)
+                    setTimeout(updateCounter, 2)
                 }
             }
             updateCounter()
