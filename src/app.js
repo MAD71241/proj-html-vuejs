@@ -112,7 +112,16 @@ const app = new Vue({
     ,
 
     methods: {
-
     }
     ,
+    mounted () {
+        allCounters = document.querySelectorAll(".statcounter")
+        allCounters.forEach(counter => {
+            counter.innerText = '0'
+            updateCounter = () => {
+                const target = +counter.getAttribute("data-target")
+            }
+            updateCounter()
+        });
+    }
 })

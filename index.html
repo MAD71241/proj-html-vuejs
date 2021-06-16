@@ -231,12 +231,12 @@
                     </div>
                 </div>
             </div>
-            <div class="stats">
+            <div class="stats bg-white">
                 <div class="container">
                     <div class="row">
                         <div v-for="stat in stats" class="col-3 text-center">
                             <h6 class="stat-title font-weight-bold">{{stat.title}}</h6>
-                            <h1 class="font-weight-bold text-mountain-meadow">{{stat.counter}}</h1>
+                            <h1 :data-target="stat.counter" class="font-weight-bold text-mountain-meadow statcounter"></h1>
                             <h6 class="text-uppercase text-gunpowder font-weight-bold">{{stat.subject}}</h6>
                         </div>
                     </div>

@@ -84,7 +84,19 @@ var app = new Vue({
       subject: "Blog posts"
     }]
   },
-  methods: {}
+  methods: {},
+  mounted: function mounted() {
+    allCounters = document.querySelectorAll(".statcounter");
+    allCounters.forEach(function (counter) {
+      counter.innerText = '0';
+
+      updateCounter = function updateCounter() {
+        var target = +counter.getAttribute("data-target");
+      };
+
+      updateCounter();
+    });
+  }
 });
 
 /***/ }),
