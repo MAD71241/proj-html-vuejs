@@ -86,12 +86,20 @@ var app = new Vue({
   },
   methods: {},
   mounted: function mounted() {
-    allCounters = document.querySelectorAll(".statcounter");
+    var allCounters = document.querySelectorAll(".statcounter");
     allCounters.forEach(function (counter) {
-      counter.innerText = '0';
+      counter.innerText = 0;
 
-      updateCounter = function updateCounter() {
+      var updateCounter = function updateCounter() {
         var target = +counter.getAttribute("data-target");
+        console.log(target);
+        var base = +counter.innerText;
+        var incremental = 1;
+
+        if (base < target) {
+          counter.innerText = Math.ceil(base + incremental);
+          setTimeout(updateCounter, 10);
+        }
       };
 
       updateCounter();
