@@ -32,9 +32,20 @@
     }
     button {
         margin-top: 60px;
-        padding: 10px 60px;
+        height: 60px;
         border: none;
-        height: 50px;
+        padding: 10px 60px;
+        margin-bottom: 20px;
+        font-size: 14px;
+        -webkit-transition: background-color 0.5s ease-out;
+        -moz-transition: background-color 0.5s ease-out;
+        -o-transition: background-color 0.5s ease-out;
+        transition: background-color 0.5s ease-out;
+    }
+    button:hover {
+        cursor: pointer;
+        color: white;
+        background-color: #3F3A64;
     }
     img {
         object-fit: contain;
