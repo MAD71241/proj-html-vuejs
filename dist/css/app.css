@@ -1,3 +1,7 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
 /************** COLOR CUBE **************/
 /* Background */
 .bg-white {
@@ -224,7 +228,6 @@ header .container img {
 /************** MAIN **************/
 /* Jumbotron */
 .jumbotron {
-  margin: 25px auto 0 auto;
   width: 80%;
 }
 .jumbotron .row .col-5 {
@@ -320,6 +323,9 @@ header .container img {
 }
 
 /************** FEATURES ***************/
+.features {
+  border-radius: 0 0 40% 0;
+}
 .features .title-container {
   margin-top: 100px;
   margin-bottom: 40px;
@@ -332,7 +338,7 @@ header .container img {
 }
 .features .container .row:last-of-type {
   margin-top: 100px;
-  margin-bottom: 100px;
+  padding-bottom: 100px;
 }
 .features .container .row:last-of-type .col-8 img:nth-of-type(2) {
   left: 50%;
@@ -354,6 +360,5 @@ header .container img {
   margin-bottom: 40px;
 }
 
-body {
-  font-family: "Poppins", sans-serif;
-}
+/************** CAROUSEL **************/
+/************** TOP **************/
