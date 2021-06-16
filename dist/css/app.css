@@ -327,6 +327,19 @@ header .container img {
 .features .container .row .col-4 img {
   margin-bottom: 40px;
 }
+.features .container .row:last-of-type {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.features .container .row:last-of-type .col-8 img:nth-of-type(2) {
+  left: 50%;
+  top: 50%;
+  transform: translate(-80%, -50%);
+}
+.features .container .row:last-of-type .col-8 img:nth-of-type(2):hover {
+  cursor: pointer;
+}
+
 body {
   font-family: "Poppins", sans-serif;
 }
