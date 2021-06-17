@@ -4,7 +4,7 @@ import 'vueperslides/dist/vueperslides.css'
 
 
 export default {
-  components: { VueperSlides, VueperSlide },
+    components: { VueperSlides, VueperSlide },
 
 }
 /* /componenti slider inutilizzate */
@@ -14,6 +14,7 @@ const app = new Vue({
     el: "#app",
     components: { VueperSlides, VueperSlide },
     data: {
+        counter: 0,
         searchQuery: "",
         navbarLinks: [
             "Home",
@@ -163,6 +164,34 @@ const app = new Vue({
             ,
         ]
         ,
+        carouselCards: [
+            {
+                title: "High level of efficiency and scientific teaching methods",
+                comment: "I am free to learn at my own pace, follow my own schedule and choose the subject i want to learn from the syllabus. Great study portal for people like me.",
+                name: "Mina Hollace",
+                jobtitle: "Freelance"
+            }
+            , {
+                title: "prova1",
+                comment: "I am free to learn at my own pace, follow my own schedule and choose the subject i want to learn from the syllabus. Great study portal for people like me.",
+                name: "Mina Hollace",
+                jobtitle: "Freelance"
+            }
+            , {
+                title: "prova2",
+                comment: "I am free to learn at my own pace, follow my own schedule and choose the subject i want to learn from the syllabus. Great study portal for people like me.",
+                name: "Mina Hollace",
+                jobtitle: "Freelance"
+            }
+            , {
+                title: "prova3",
+                comment: "I am free to learn at my own pace, follow my own schedule and choose the subject i want to learn from the syllabus. Great study portal for people like me.",
+                name: "Mina Hollace",
+                jobtitle: "Freelance"
+            }
+            ,
+        ],
+
         exploreLinks: [
             {
                 title: "Start here",
@@ -214,6 +243,9 @@ const app = new Vue({
     ,
 
     methods: {
+        sliderSelector(index) {
+            return this.counter = index;
+        }
     }
     ,
     mounted() {

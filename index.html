@@ -180,6 +180,8 @@
 
             <!-- Carousel section -->
             <div class="carousel-top">
+
+                <!-- titolo -->
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="title-container text-center">
@@ -190,6 +192,9 @@
                         </div>
                     </div>
                 </div>
+                <!-- /titolo -->
+
+                <!-- carousel main -->
                 <div class="row even mb-5">
                     <div class="col-4">
                         <div class="inactive-card rounded">
@@ -206,6 +211,7 @@
                         </div>
                     </div>
                     <div class="col-4">
+                        <div class="defaultIndicator" @click="sliderSelector(index)" v-for="(img, index) in images"></div class="defaultIndicator">
                         <div class="active-card rounded bg-white">
                             <h6 class="font-weight-bold">High level of efficiency and scientific teaching methods</h6>
                             <p>I am free to learn at my own pace, follow my own schedule and choose the subject i want
@@ -234,10 +240,14 @@
                         </div>
                     </div>
                 </div>
+                <!-- /carousel main -->
+
+                <!-- selectors -->
                 <div class="d-flex carousel-counter justify-content-center mb-5">
-                    <i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i><i
-                        class="fas fa-circle"></i>
+                    <div @click="sliderSelector(index)" :class="counter === index ? 'activeIndicator' : ''" v-for="(carouselcard, index) in carouselCards"><i :class="counter === index ? 'fas fa-circle' : 'far fa-circle'"></i></div>
                 </div>
+                <!-- /selectors -->
+
                 <div class="container">
                     <div class="claim text-center">
                         <h4 class="font-weight-bold text-gunpowder">Start today for getting <span

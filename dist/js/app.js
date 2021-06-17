@@ -33,6 +33,7 @@ var app = new Vue({
     VueperSlide: vueperslides__WEBPACK_IMPORTED_MODULE_0__.VueperSlide
   },
   data: {
+    counter: 0,
     searchQuery: "",
     navbarLinks: ["Home", "Pages", "Courses", "Features", "Blog", "Shop"],
     logos: ["client-logo-01", "client-logo-02", "client-logo-03", "client-logo-04", "client-logo-05", "client-logo-06"],
@@ -137,6 +138,15 @@ var app = new Vue({
       date: "May 15, 2020",
       views: 603
     }],
+    carouselCards: [{
+      title: "prova"
+    }, {
+      title: "prova"
+    }, {
+      title: "prova"
+    }, {
+      title: "prova"
+    }],
     exploreLinks: [{
       title: "Start here",
       link: ""
@@ -170,7 +180,11 @@ var app = new Vue({
       link: ""
     }]
   },
-  methods: {},
+  methods: {
+    sliderSelector: function sliderSelector(index) {
+      return this.counter = index;
+    }
+  },
   mounted: function mounted() {
     var allCounters = document.querySelectorAll(".statcounter");
     allCounters.forEach(function (counter) {
