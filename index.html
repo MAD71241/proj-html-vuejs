@@ -19,12 +19,12 @@
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <!-- SCSS -->
     <link rel="stylesheet" href="./dist/css/app.css">
-    <title>MaxCoach</title>
+    <title>Maxcoach</title>
 </head>
 
 <body class="bg-hintofred">
     <div id="app">
-        <!-- header section -->
+        <!-- Header section -->
         <header class="d-flex align-items-center bg-white">
             <div class="container">
                 <div class="row justify-content-between">
@@ -43,9 +43,10 @@
                 </div>
             </div>
         </header>
-        <!-- /header section -->
+        <!-- /Header section -->
 
         <main>
+            <!-- Jumbotron -->
             <div class="jumbo-container bg-white">
                 <div class="container jumbotron bg-white">
                     <div class="row">
@@ -83,6 +84,9 @@
                     </div>
                 </div>
             </div>
+            <!-- /Jumbotron -->
+
+            <!-- Courses section -->
             <div class="courses bg-hintofred">
                 <div class="container text-center">
                     <h6 id="section-title" class="text-uppercase text-shady-lady">Stimulated to learn?
@@ -122,6 +126,9 @@
                             class="fa fa-arrow-right" aria-hidden="true"></i> </button>
                 </div>
             </div>
+            <!-- /Courses section -->
+
+            <!-- Features section -->
             <div class="features bg-white">
                 <div class="title-container text-center">
                     <h6 class="text-uppercase">Maxcoach available courses</h6>
@@ -154,11 +161,14 @@
                                     class="font-weight-normal text-mountain-meadow"> Companionship</span></h2>
                             <p>Sneek peek into what has in store for you on our online teaching and mentoring portal.
                                 Seek for some hidden hints of early-bird rewards as well.</p>
-                            <a href="">Download free guidebook <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                            <a class="text-mountain-meadow text-underling" href="">Download free guidebook <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- /Features section -->
+
+            <!-- Carousel section -->
             <div class="carousel-top">
                 <div class="container">
                     <div class="row justify-content-center">
@@ -232,6 +242,9 @@
                     </div>
                 </div>
             </div>
+            <!-- /Carousel section -->
+
+            <!-- Stats section -->
             <div class="stats bg-white">
                 <div class="container">
                     <div class="row">
@@ -244,6 +257,9 @@
                     </div>
                 </div>
             </div>
+            <!-- /Stats section -->
+
+            <!-- Blog Posts section -->
             <div class="featured-blog-posts bg-hintofred">
                 <div class="container">
                     <div class="row">
@@ -283,6 +299,9 @@
                     </div>
                 </div>
             </div>
+            <!-- /Blog Posts section -->
+
+            <!-- Subscribe section -->
             <div class="subscribe text-center bg-white">
                 <div class="text-container">
                     <h1 class="font-weight-bold text-gunpowder">Subscribe <span class="font-weight-normal text-mountain-meadow">Newsletter</span></h1>
@@ -297,9 +316,13 @@
                     <img src="./src/img/maxcoach-shape-02.png" alt="">
                 </div>
             </div>
+            <!-- /Subscribe section -->
+
+            <!-- footer section -->
             <div class="footer">
                 <div class="container">
                     <div class="row pb-5">
+                        <!-- address column -->
                         <div class="col-6 text-shady-lady">
                             <h4 class="text-gunpowder">Address</h4>
                             <div class="address">382 NE 191st # 87394 Miami, FL 33179-3899</div>
@@ -312,6 +335,9 @@
                                 <i class="fab fa-linkedin"></i>
                             </div>
                         </div>
+                        <!-- /address column -->
+
+                        <!-- Explore column -->
                         <div class="col-3">
                             <h4>Explore</h4>
                             <div class="row pt-0">
@@ -319,16 +345,21 @@
                                     <a class="text-shady-lady" href="">{{link.title}}</a></div>
                             </div>
                         </div>
+                        <!-- /Explore column -->
+
+                        <!-- Information column -->
                         <div class="col-3" style="padding-left: 30px; padding-right: 0;">
                             <h4>Information</h4>
                             <div class="row pt-0">
                                 <div v-for="link in infoLinks" class="col-12" style="padding-top: 10px;"><a class="text-shady-lady">{{link.title}}</a></div>
                             </div>
                         </div>
+                        <!-- /Information column -->
                     </div>
                 </div>
                 <h6 class="text-center pb-5 text-shady-lady">&copy; 2020 Maxcoach, All Rights Reserved</h6>
             </div>
+            <!-- /footer section -->
         </main>
     </div>
     <!-- VueJs -->

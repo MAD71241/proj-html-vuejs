@@ -367,6 +367,12 @@ header .container img {
   margin-top: 20px;
   margin-bottom: 40px;
 }
+.features .container .row:last-of-type .col-4 a:hover {
+  color: #1fad96;
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+}
 
 /************** CAROUSEL **************/
 .carousel-top .container .row {
