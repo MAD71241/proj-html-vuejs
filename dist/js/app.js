@@ -33,7 +33,11 @@ var app = new Vue({
     VueperSlide: vueperslides__WEBPACK_IMPORTED_MODULE_0__.VueperSlide
   },
   data: {
+    isClicked: false,
     counter: 0,
+    currentcard: 1,
+    prevcard: 0,
+    nextcard: 2,
     searchQuery: "",
     navbarLinks: ["Home", "Pages", "Courses", "Features", "Blog", "Shop"],
     logos: ["client-logo-01", "client-logo-02", "client-logo-03", "client-logo-04", "client-logo-05", "client-logo-06"],
@@ -107,6 +111,12 @@ var app = new Vue({
       counter: 1090,
       subject: "Blog posts"
     }],
+    cleancard: {
+      title: "Qui ci andrebbe un V-Show",
+      comment: "Non ho abbastanza tempo per implementare una soluzione migliore",
+      name: "Michele Deliso",
+      jobtitle: "Wannabe Dev"
+    },
     blogLinks: [{
       title: "Become a Better Blogger: Content Planning",
       link: ""
@@ -139,13 +149,25 @@ var app = new Vue({
       views: 603
     }],
     carouselCards: [{
-      title: "prova"
+      title: "prova0",
+      comment: "I am free to learn at my own pace, follow my own schedule and choose the subject i want to learn from the syllabus. Great study portal for people like me.",
+      name: "Mina Hollace",
+      jobtitle: "Freelance"
     }, {
-      title: "prova"
+      title: "prova1",
+      comment: "I am free to learn at my own pace, follow my own schedule and choose the subject i want to learn from the syllabus. Great study portal for people like me.",
+      name: "Mina Hollace",
+      jobtitle: "Freelance"
     }, {
-      title: "prova"
+      title: "prova2",
+      comment: "I am free to learn at my own pace, follow my own schedule and choose the subject i want to learn from the syllabus. Great study portal for people like me.",
+      name: "Mina Hollace",
+      jobtitle: "Freelance"
     }, {
-      title: "prova"
+      title: "prova3",
+      comment: "I am free to learn at my own pace, follow my own schedule and choose the subject i want to learn from the syllabus. Great study portal for people like me.",
+      name: "Mina Hollace",
+      jobtitle: "Freelance"
     }],
     exploreLinks: [{
       title: "Start here",
@@ -182,7 +204,21 @@ var app = new Vue({
   },
   methods: {
     sliderSelector: function sliderSelector(index) {
-      return this.counter = index;
+      this.isClicked = true;
+      this.counter = index;
+      console.log(this.carouselCards.length);
+      console.log(index);
+      this.currentcard = this.carouselCards[index];
+      this.prevcard = this.carouselCards[this.counter - 1];
+      this.nextcard = this.carouselCards[this.counter + 1];
+
+      if (index === 3) {
+        this.nextcard = this.cleancard;
+        this.prevcard = this.carouselCards[this.counter - 1];
+      } else if (index === 0) {
+        this.prevcard = this.cleancard;
+        this.nextcard = this.carouselCards[1];
+      }
     }
   },
   mounted: function mounted() {

@@ -197,56 +197,87 @@
                 <!-- carousel main -->
                 <div class="row even mb-5">
                     <div class="col-4">
-                        <div class="inactive-card rounded">
-                            <h6 class="font-weight-bold">High level of efficiency and scientific teaching methods</h6>
-                            <p>I am free to learn at my own pace, follow my own schedule and choose the subject i want
-                                to learn from the syllabus. Great study portal for people like me.</p>
+                        <div class="inactive-card rounded" v-if="isClicked == false">
+                            <h6 class="font-weight-bold">prova-1</h6>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, placeat?</p>
                             <div class="identify d-flex flex-row">
                                 <img src="./src/img/testimonial-avata-02.jpg" alt="">
                                 <div class="text-container">
-                                    <h6 class="text-uppercase font-weight-bold">Mina Hollace</h6>
-                                    <p>/ Freelance</p>
+                                    <h6 class="text-uppercase font-weight-bold">nome-1</h6>
+                                    <p>/ titolo-1</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inactive-card rounded" v-else>
+                            <h6 class="font-weight-bold">{{prevcard.title}}</h6>
+                            <p>{{prevcard.comment}}</p>
+                            <div class="identify d-flex flex-row">
+                                <img src="./src/img/testimonial-avata-02.jpg" alt="">
+                                <div class="text-container">
+                                    <h6 class="text-uppercase font-weight-bold">{{prevcard.name}}</h6>
+                                    <p>/ {{prevcard.jobtitle}}</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-4">
-                        <div class="defaultIndicator" @click="sliderSelector(index)" v-for="(img, index) in images"></div class="defaultIndicator">
-                        <div class="active-card rounded bg-white">
-                            <h6 class="font-weight-bold">High level of efficiency and scientific teaching methods</h6>
-                            <p>I am free to learn at my own pace, follow my own schedule and choose the subject i want
-                                to learn from the syllabus. Great study portal for people like me.</p>
+                        <div class="active-card rounded bg-white" v-if="isClicked == false">
+                            <h6 class="font-weight-bold">prova</h6>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, esse?</p>
                             <div class="identify d-flex flex-row">
                                 <img src="./src/img/testimonial-avata-02.jpg" alt="">
                                 <div class="text-container">
-                                    <h6 class="text-uppercase font-weight-bold">Mina Hollace</h6>
-                                    <p>/ Freelance</p>
+                                    <h6 class="text-uppercase font-weight-bold">prova nome</h6>
+                                    <p>/ titolo</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="active-card rounded bg-white" v-else>
+                            <h6 class="font-weight-bold">{{currentcard.title}}</h6>
+                            <p>{{currentcard.comment}}</p>
+                            <div class="identify d-flex flex-row">
+                                <img src="./src/img/testimonial-avata-02.jpg" alt="">
+                                <div class="text-container">
+                                    <h6 class="text-uppercase font-weight-bold">{{currentcard.name}}</h6>
+                                    <p>/ {{currentcard.jobtitle}}</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-4">
-                        <div class="inactive-card rounded">
-                            <h6 class="font-weight-bold">High level of efficiency and scientific teaching methods</h6>
-                            <p>I am free to learn at my own pace, follow my own schedule and choose the subject i want
-                                to learn from the syllabus. Great study portal for people like me.</p>
+                        <div class="inactive-card rounded" v-if="isClicked == false">
+                            <h6 class="font-weight-bold">prova+1</h6>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, placeat?</p>
                             <div class="identify d-flex flex-row">
                                 <img src="./src/img/testimonial-avata-02.jpg" alt="">
                                 <div class="text-container">
-                                    <h6 class="text-uppercase font-weight-bold">Mina Hollace</h6>
-                                    <p>/ Freelance</p>
+                                    <h6 class="text-uppercase font-weight-bold">nome+1</h6>
+                                    <p>/ titolo+1</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inactive-card rounded" v-else>
+                            <h6 class="font-weight-bold">{{nextcard.title}}</h6>
+                            <p>{{nextcard.comment}}</p>
+                            <div class="identify d-flex flex-row">
+                                <img src="./src/img/testimonial-avata-02.jpg" alt="">
+                                <div class="text-container">
+                                    <h6 class="text-uppercase font-weight-bold">{{nextcard.name}}</h6>
+                                    <p>/ {{nextcard.jobtitle}}</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- /carousel main -->
-
+                
                 <!-- selectors -->
                 <div class="d-flex carousel-counter justify-content-center mb-5">
-                    <div @click="sliderSelector(index)" :class="counter === index ? 'activeIndicator' : ''" v-for="(carouselcard, index) in carouselCards"><i :class="counter === index ? 'fas fa-circle' : 'far fa-circle'"></i></div>
+                    <div @click="sliderSelector(index)" v-for="(carouselcard, index) in carouselCards"><i
+                            :class="counter === index ? 'fas fa-circle' : 'far fa-circle'"></i></div>
                 </div>
                 <!-- /selectors -->
+
+                <!-- /carousel main -->
 
                 <div class="container">
                     <div class="claim text-center">

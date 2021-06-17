@@ -14,7 +14,11 @@ const app = new Vue({
     el: "#app",
     components: { VueperSlides, VueperSlide },
     data: {
+        isClicked: false,
         counter: 0,
+        currentcard: 1,
+        prevcard: 0,
+        nextcard: 2,
         searchQuery: "",
         navbarLinks: [
             "Home",
@@ -120,6 +124,14 @@ const app = new Vue({
             }
             ,
         ],
+        cleancard:
+        {
+            title: "Qui ci andrebbe un V-Show",
+            comment: "Non ho abbastanza tempo per implementare una soluzione migliore",
+            name: "Michele Deliso",
+            jobtitle: "Wannabe Dev"
+        }
+        ,
         blogLinks: [
             {
                 title: "Become a Better Blogger: Content Planning",
@@ -166,7 +178,7 @@ const app = new Vue({
         ,
         carouselCards: [
             {
-                title: "High level of efficiency and scientific teaching methods",
+                title: "prova0",
                 comment: "I am free to learn at my own pace, follow my own schedule and choose the subject i want to learn from the syllabus. Great study portal for people like me.",
                 name: "Mina Hollace",
                 jobtitle: "Freelance"
@@ -244,8 +256,22 @@ const app = new Vue({
 
     methods: {
         sliderSelector(index) {
-            return this.counter = index;
+            this.isClicked = true;
+            this.counter = index;
+            console.log(this.carouselCards.length);
+            console.log(index);
+            this.currentcard = this.carouselCards[index]
+            this.prevcard = this.carouselCards[(this.counter - 1)]
+            this.nextcard = this.carouselCards[(this.counter + 1)]
+            if (index === 3) {
+                this.nextcard = this.cleancard
+                this.prevcard = this.carouselCards[(this.counter - 1)]
+            } else if (index === 0) {
+                this.prevcard = this.cleancard
+                this.nextcard = this.carouselCards[1]
+            }
         }
+        ,
     }
     ,
     mounted() {
@@ -264,5 +290,6 @@ const app = new Vue({
             }
             updateCounter()
         });
+
     }
 })
