@@ -331,6 +331,15 @@ header .container img {
 .features {
   border-radius: 0 0 40% 0;
 }
+.features a {
+  color: #1fad96;
+}
+.features a:hover {
+  color: #1fad96;
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+}
 .features .title-container {
   margin-top: 100px;
   margin-bottom: 40px;
@@ -366,12 +375,6 @@ header .container img {
 .features .container .row:last-of-type .col-4 p {
   margin-top: 20px;
   margin-bottom: 40px;
-}
-.features .container .row:last-of-type .col-4 a:hover {
-  color: #1fad96;
-  font-weight: bold;
-  text-decoration: underline;
-  cursor: pointer;
 }
 
 /************** CAROUSEL **************/
