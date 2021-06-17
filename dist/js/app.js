@@ -113,6 +113,38 @@ var app = new Vue({
       title: "Pocket-Sized Notebooks Hold Miniature Paintings",
       date: "May 15, 2020",
       views: 603
+    }],
+    exploreLinks: [{
+      title: "Start here",
+      link: ""
+    }, {
+      title: "Success story",
+      link: ""
+    }, {
+      title: "Blog",
+      link: ""
+    }, {
+      title: "Courses",
+      link: ""
+    }, {
+      title: "About us",
+      link: ""
+    }, {
+      title: "Contact us",
+      link: ""
+    }],
+    infoLinks: [{
+      title: "Membership",
+      link: ""
+    }, {
+      title: "Purchase guide",
+      link: ""
+    }, {
+      title: "Privacy policy",
+      link: ""
+    }, {
+      title: "Terms of service",
+      link: ""
     }]
   },
   methods: {},

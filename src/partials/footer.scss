@@ -17,6 +17,17 @@
                     .fab {
                         padding: 0 25px 0 5px;
                     }
+                    .fab:hover {
+                        color: #1FAD96;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .col-3 {
+                a:hover {
+                    color: #1FAD96;
+                    cursor: pointer;
+                    text-decoration: none;
                 }
             }
         }

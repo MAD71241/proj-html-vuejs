@@ -113,19 +113,19 @@ const app = new Vue({
                 title: "Become a Better Blogger: Content Planning",
                 link: ""
             }
-            ,            {
+            , {
                 title: "Promoting Your Online Business on Pinterest",
                 link: ""
             }
-            ,            {
+            , {
                 title: "Gamification and Game-Based Learning",
                 link: ""
             }
-            ,            {
+            , {
                 title: "Designing an Online Course from Expert's Perspective",
                 link: ""
             }
-            ,            {
+            , {
                 title: "Why Online Courses Are The Future of Education",
                 link: ""
             }
@@ -141,7 +141,7 @@ const app = new Vue({
                 date: "May 15, 2020",
                 views: 688
             }
-            ,            {
+            , {
                 kind: "artist",
                 imglink: "blog-02-480x352",
                 imgext: ".jpg",
@@ -151,6 +151,53 @@ const app = new Vue({
             }
             ,
         ]
+        ,
+        exploreLinks: [
+            {
+                title: "Start here",
+                link: "",
+            }
+            , {
+                title: "Success story",
+                link: "",
+            }
+            , {
+                title: "Blog",
+                link: "",
+            }
+            , {
+                title: "Courses",
+                link: "",
+            }
+            , {
+                title: "About us",
+                link: "",
+            }
+            , {
+                title: "Contact us",
+                link: "",
+            }
+            ,
+
+        ],
+        infoLinks: [
+            {
+                title: "Membership",
+                link: "",
+            }
+            , {
+                title: "Purchase guide",
+                link: "",
+            }
+            , {
+                title: "Privacy policy",
+                link: "",
+            }
+            , {
+                title: "Terms of service",
+                link: "",
+            }
+        ],
 
     }
     ,

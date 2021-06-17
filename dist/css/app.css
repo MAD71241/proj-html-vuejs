@@ -335,6 +335,9 @@ header .container img {
   margin-top: 100px;
   margin-bottom: 40px;
 }
+.features .title-container h6 {
+  padding-top: 40px;
+}
 .features .container .row .col-4 img {
   margin-bottom: 40px;
 }
@@ -563,4 +566,13 @@ header .container img {
 }
 .footer .container .row .col-6 .row .fab {
   padding: 0 25px 0 5px;
+}
+.footer .container .row .col-6 .row .fab:hover {
+  color: #1FAD96;
+  cursor: pointer;
+}
+.footer .container .row .col-3 a:hover {
+  color: #1FAD96;
+  cursor: pointer;
+  text-decoration: none;
 }

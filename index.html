@@ -300,8 +300,8 @@
             <div class="footer">
                 <div class="container">
                     <div class="row pb-5">
-                        <div class="col-6">
-                            <h4>Address</h4>
+                        <div class="col-6 text-shady-lady">
+                            <h4 class="text-gunpowder">Address</h4>
                             <div class="address">382 NE 191st # 87394 Miami, FL 33179-3899</div>
                             <div class="address">+1(305)547-9909 (9am - 5pm EST, Monday - Friday)</div>
                             <div class="address">support@maxcoach.com</div>
@@ -315,26 +315,19 @@
                         <div class="col-3">
                             <h4>Explore</h4>
                             <div class="row pt-0">
-                                <div class="col-6"><a href="">prova</a></div>
-                                <div class="col-6"><a href="">prova</a></div>
-                                <div class="col-6"><a href="">prova</a></div>
-                                <div class="col-6"><a href="">prova</a></div>
-                                <div class="col-6"><a href="">prova</a></div>
-                                <div class="col-6"><a href="">prova</a></div>
+                                <div v-for='link in exploreLinks' class="col-6" style="padding-top: 10px;">
+                                    <a class="text-shady-lady" href="">{{link.title}}</a></div>
                             </div>
                         </div>
-                        <div class="col-3">
+                        <div class="col-3" style="padding-left: 30px; padding-right: 0;">
                             <h4>Information</h4>
                             <div class="row pt-0">
-                                <div class="col-12"><a href="">prova</a></div>
-                                <div class="col-12"><a href="">prova</a></div>
-                                <div class="col-12"><a href="">prova</a></div>
-                                <div class="col-12"><a href="">prova</a></div>
+                                <div v-for="link in infoLinks" class="col-12" style="padding-top: 10px;"><a class="text-shady-lady">{{link.title}}</a></div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <h6 class="text-center pb-5">&copy; 2020 Maxcoach, All Rights Reserved</h6>
+                <h6 class="text-center pb-5 text-shady-lady">&copy; 2020 Maxcoach, All Rights Reserved</h6>
             </div>
         </main>
     </div>
