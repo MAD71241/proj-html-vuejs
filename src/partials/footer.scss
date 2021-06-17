@@ -1,0 +1,24 @@
+.footer {
+    .container {
+        .row {
+            padding-top: 40px;
+            .col-6 {
+                h4 {
+                    padding-top: 10px;
+                }
+                .address {
+                    font-size: 13px;
+                    padding: 5px 0
+                }
+                .row {
+                    padding-top: 20px;
+                    margin-left: 0;
+                    font-size: 25px;
+                    .fab {
+                        padding: 0 25px 0 5px;
+                    }
+                }
+            }
+        }
+    }
+}

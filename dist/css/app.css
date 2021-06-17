@@ -545,3 +545,22 @@ header .container img {
 .subscribe .image-container img:first-of-type {
   transform: rotate(45deg);
 }
+
+.footer .container .row {
+  padding-top: 40px;
+}
+.footer .container .row .col-6 h4 {
+  padding-top: 10px;
+}
+.footer .container .row .col-6 .address {
+  font-size: 13px;
+  padding: 5px 0;
+}
+.footer .container .row .col-6 .row {
+  padding-top: 20px;
+  margin-left: 0;
+  font-size: 25px;
+}
+.footer .container .row .col-6 .row .fab {
+  padding: 0 25px 0 5px;
+}
