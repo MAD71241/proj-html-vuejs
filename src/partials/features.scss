@@ -1,5 +1,16 @@
 /************** FEATURES ***************/
 .features {
+    #right-decoration {
+        position: relative;
+        left: 73%;
+        bottom: 60px;
+        box-shadow: none;
+    }
+    #left-decoration {
+        position: relative;
+        left: -258px;
+        top: -60%;
+    }
     a {
         color: #1fad96;
     }
@@ -35,15 +46,15 @@
             padding-bottom: 100px;
             .col-8 {
                 img:nth-of-type(1) {
-                    -webkit-box-shadow: 0px 50px 41px -31px #ADADAD;
-                    -moz-box-shadow: 0px 50px 41px -31px #ADADAD;
-                    -o-box-shadow: 0px 50px 41px -31px #ADADAD;
-                    box-shadow: 0px 50px 41px -31px #ADADAD;
+                    -webkit-box-shadow: 0px 50px 41px -31px #adadad;
+                    -moz-box-shadow: 0px 50px 41px -31px #adadad;
+                    -o-box-shadow: 0px 50px 41px -31px #adadad;
+                    box-shadow: 0px 50px 41px -31px #adadad;
                 }
                 img:nth-of-type(2) {
                     left: 50%;
                     top: 50%;
-                    transform: translate(-80%, -50%);
+                    transform: translate(-80%, -180%);
                 }
                 img:nth-of-type(2):hover {
                     cursor: pointer;
