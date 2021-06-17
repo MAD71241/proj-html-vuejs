@@ -7,6 +7,14 @@ body {
   justify-content: space-evenly;
 }
 
+hr {
+  margin: 0;
+  padding: 0;
+  height: 15px;
+  background: #e6e6e6;
+  background: linear-gradient(180deg, rgba(230, 230, 230, 0.504937009) 0%, white 100%);
+}
+
 /************** COLOR CUBE **************/
 /* Background */
 .bg-white {
@@ -554,6 +562,7 @@ header .container img {
   border: none;
   padding: 10px 60px;
   font-size: 14px;
+  border-radius: 0 5px 5px 0;
   transition: background-color 0.5s ease-out 0s;
 }
 .subscribe .text-container button:hover {

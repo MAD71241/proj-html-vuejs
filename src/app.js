@@ -1,7 +1,18 @@
+/* componenti slider inutilizzate */
+import { VueperSlides, VueperSlide } from 'vueperslides'
+import 'vueperslides/dist/vueperslides.css'
+
+
+export default {
+  components: { VueperSlides, VueperSlide },
+
+}
+/* /componenti slider inutilizzate */
+
 const app = new Vue({
 
     el: "#app",
-
+    components: { VueperSlides, VueperSlide },
     data: {
         searchQuery: "",
         navbarLinks: [
@@ -212,7 +223,6 @@ const app = new Vue({
             counter.innerText = 0
             const updateCounter = () => {
                 const target = +counter.getAttribute("data-target")
-                console.log(target);
                 const base = +counter.innerText
                 const incremental = 1;
                 if (base < target) {

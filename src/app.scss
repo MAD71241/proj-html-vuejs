@@ -7,6 +7,14 @@ body {
     justify-content: space-evenly
 }
 
+hr {
+    margin: 0;
+    padding: 0;
+    height: 15px;
+    background: rgb(230,230,230);
+    background: linear-gradient(180deg, rgba(230,230,230,0.5049370089832808) 0%, rgba(255,255,255,1) 100%);
+}
+
 @import "./partials/palette.scss";
 @import "./partials/header.scss";
 @import "./partials/jumbotron.scss";
