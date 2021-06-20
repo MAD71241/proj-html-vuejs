@@ -229,6 +229,8 @@ var app = new Vue({
     }
   },
   mounted: function mounted() {
+    var _this = this;
+
     var allCounters = document.querySelectorAll(".statcounter");
     allCounters.forEach(function (counter) {
       counter.innerText = 0;
@@ -246,6 +248,30 @@ var app = new Vue({
 
       updateCounter();
     });
+
+    var autoCarousel = function autoCarousel() {
+      if (_this.isMore === true && index !== 3) {
+        _this.isMore = false;
+      } else if (_this.isLess === true && index !== 0) {
+        _this.isLess = false;
+      }
+
+      _this.currentcard = _this.carouselCards[_this.counter];
+      _this.prevcard = _this.carouselCards[_this.counter - 1];
+      _this.nextcard = _this.carouselCards[_this.counter + 1];
+
+      if (index === 3) {
+        _this.prevcard = _this.carouselCards[_this.counter - 1];
+        _this.nextcard = _this.carouselCards[_this.counter];
+        _this.isMore = true;
+      } else if (index === 0) {
+        _this.nextcard = _this.carouselCards[1];
+        _this.prevcard = _this.carouselCards[0];
+        _this.isLess = true;
+      }
+    };
+
+    autoCarousel(this.counter);
   }
 });
 

@@ -258,7 +258,7 @@ const app = new Vue({
     methods: {
         sliderSelector(index) {
             this.counter = index;
-            if (this.isMore === true && index !== 3) {
+             if (this.isMore === true && index !== 3) {
                 this.isMore = false;
             } else if (this.isLess === true && index !== 0) {
                 this.isLess = false;
@@ -296,5 +296,25 @@ const app = new Vue({
             updateCounter()
         });
 
+        const autoCarousel = () => {
+            if (this.isMore === true && index !== 3) {
+                this.isMore = false;
+            } else if (this.isLess === true && index !== 0) {
+                this.isLess = false;
+            }
+            this.currentcard = this.carouselCards[this.counter]
+            this.prevcard = this.carouselCards[(this.counter - 1)]
+            this.nextcard = this.carouselCards[(this.counter + 1)]
+            if (index === 3) {
+                this.prevcard = this.carouselCards[(this.counter - 1)]
+                this.nextcard = this.carouselCards[this.counter]
+                this.isMore = true;
+            } else if (index === 0) {
+                this.nextcard = this.carouselCards[1]
+                this.prevcard = this.carouselCards[0]
+                this.isLess = true;
+            }
+        }
+        autoCarousel(this.counter)
     }
 })
