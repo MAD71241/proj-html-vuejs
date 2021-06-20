@@ -179,28 +179,32 @@ const app = new Vue({
         ,
         carouselCards: [
             {
-                title: "prova0",
-                comment: "I am free to learn at my own pace, follow my own schedule and choose the subject i want to learn from the syllabus. Great study portal for people like me.",
-                name: "Mina Hollace",
-                jobtitle: "Freelance"
+                title: "It's a choice of quality for people with special needs",
+                comment: "I'm a very strict person so i require everything to be organized and neat. Then, i'll be able to make things right and shine. MaxCoach guys just got me.",
+                name: "Florence Theves",
+                jobtitle: "Multimedia Admin",
+                avatar: "testimonial-avata-01.jpg"
             }
             , {
-                title: "prova1",
+                title: "High level of efficiency and scientific teaching methods",
                 comment: "I am free to learn at my own pace, follow my own schedule and choose the subject i want to learn from the syllabus. Great study portal for people like me.",
                 name: "Mina Hollace",
-                jobtitle: "Freelance"
+                jobtitle: "Freelance",
+                avatar: "testimonial-avata-02.jpg"
             }
             , {
-                title: "prova2",
-                comment: "I am free to learn at my own pace, follow my own schedule and choose the subject i want to learn from the syllabus. Great study portal for people like me.",
-                name: "Mina Hollace",
-                jobtitle: "Freelance"
+                title: "Professional team of specialists and passionate mentors at reach",
+                comment: "I need to get a certification for english proficiency and MaxCoach is my best choice. Their tutors are smart and professional when dealing with students.",
+                name: "Madley Pondor",
+                jobtitle: "IT Specialist",
+                avatar: "testimonial-avata-03.jpg"
             }
             , {
-                title: "prova3",
-                comment: "I am free to learn at my own pace, follow my own schedule and choose the subject i want to learn from the syllabus. Great study portal for people like me.",
-                name: "Mina Hollace",
-                jobtitle: "Freelance"
+                title: "lorem ipsum title",
+                comment: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, eligendi earum vel maxime eos suscipit!",
+                name: "Lorem Name",
+                jobtitle: "Lorem Title",
+                avatar: "testimonial-avata-04.jpg"
             }
             ,
         ],
@@ -258,7 +262,8 @@ const app = new Vue({
     methods: {
         sliderSelector(index) {
             this.counter = index;
-             if (this.isMore === true && index !== 3) {
+            const reach = this.carouselCards.length - 1
+              if (this.isMore === true && index !== reach) {
                 this.isMore = false;
             } else if (this.isLess === true && index !== 0) {
                 this.isLess = false;
@@ -266,7 +271,7 @@ const app = new Vue({
             this.currentcard = this.carouselCards[this.counter]
             this.prevcard = this.carouselCards[(this.counter - 1)]
             this.nextcard = this.carouselCards[(this.counter + 1)]
-            if (index === 3) {
+            if (index === reach) {
                 this.prevcard = this.carouselCards[(this.counter - 1)]
                 this.nextcard = this.carouselCards[this.counter]
                 this.isMore = true;
@@ -296,8 +301,9 @@ const app = new Vue({
             updateCounter()
         });
 
-        const autoCarousel = () => {
-            if (this.isMore === true && index !== 3) {
+        const autoCarousel = (index) => {
+            const reach = this.carouselCards.length - 1
+            if (this.isMore === true && index !== reach) {
                 this.isMore = false;
             } else if (this.isLess === true && index !== 0) {
                 this.isLess = false;
@@ -305,7 +311,7 @@ const app = new Vue({
             this.currentcard = this.carouselCards[this.counter]
             this.prevcard = this.carouselCards[(this.counter - 1)]
             this.nextcard = this.carouselCards[(this.counter + 1)]
-            if (index === 3) {
+            if (index === reach) {
                 this.prevcard = this.carouselCards[(this.counter - 1)]
                 this.nextcard = this.carouselCards[this.counter]
                 this.isMore = true;

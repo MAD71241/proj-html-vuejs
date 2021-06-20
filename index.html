@@ -201,7 +201,7 @@
                             <h6 class="font-weight-bold">{{prevcard.title}}</h6>
                             <p>{{prevcard.comment}}</p>
                             <div class="identify d-flex flex-row">
-                                <img src="./src/img/testimonial-avata-02.jpg" alt="">
+                                <img :src="'./src/img/'+prevcard.avatar" alt="">
                                 <div class="text-container">
                                     <h6 class="text-uppercase font-weight-bold">{{prevcard.name}}</h6>
                                     <p>/ {{prevcard.jobtitle}}</p>
@@ -214,7 +214,7 @@
                             <h6 class="font-weight-bold">{{currentcard.title}}</h6>
                             <p>{{currentcard.comment}}</p>
                             <div class="identify d-flex flex-row">
-                                <img src="./src/img/testimonial-avata-02.jpg" alt="">
+                                <img :src="'./src/img/'+currentcard.avatar" alt="">
                                 <div class="text-container">
                                     <h6 class="text-uppercase font-weight-bold">{{currentcard.name}}</h6>
                                     <p>/ {{currentcard.jobtitle}}</p>
@@ -227,7 +227,7 @@
                             <h6 class="font-weight-bold">{{nextcard.title}}</h6>
                             <p>{{nextcard.comment}}</p>
                             <div class="identify d-flex flex-row">
-                                <img src="./src/img/testimonial-avata-02.jpg" alt="">
+                                <img :src="'./src/img/'+nextcard.avatar" alt="">
                                 <div class="text-container">
                                     <h6 class="text-uppercase font-weight-bold">{{nextcard.name}}</h6>
                                     <p>/ {{nextcard.jobtitle}}</p>
