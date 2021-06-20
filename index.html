@@ -196,19 +196,8 @@
 
                 <!-- carousel main -->
                 <div class="row even mb-5">
-                    <div class="col-4">
-                        <div class="inactive-card rounded" v-if="isClicked == false">
-                            <h6 class="font-weight-bold">prova-1</h6>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, placeat?</p>
-                            <div class="identify d-flex flex-row">
-                                <img src="./src/img/testimonial-avata-02.jpg" alt="">
-                                <div class="text-container">
-                                    <h6 class="text-uppercase font-weight-bold">nome-1</h6>
-                                    <p>/ titolo-1</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="inactive-card rounded" v-else>
+                    <div class="col-4" >
+                        <div class="inactive-card rounded" v-show="!isLess">
                             <h6 class="font-weight-bold">{{prevcard.title}}</h6>
                             <p>{{prevcard.comment}}</p>
                             <div class="identify d-flex flex-row">
@@ -221,18 +210,7 @@
                         </div>
                     </div>
                     <div class="col-4">
-                        <div class="active-card rounded bg-white" v-if="isClicked == false">
-                            <h6 class="font-weight-bold">prova</h6>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, esse?</p>
-                            <div class="identify d-flex flex-row">
-                                <img src="./src/img/testimonial-avata-02.jpg" alt="">
-                                <div class="text-container">
-                                    <h6 class="text-uppercase font-weight-bold">prova nome</h6>
-                                    <p>/ titolo</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="active-card rounded bg-white" v-else>
+                        <div class="active-card rounded bg-white">
                             <h6 class="font-weight-bold">{{currentcard.title}}</h6>
                             <p>{{currentcard.comment}}</p>
                             <div class="identify d-flex flex-row">
@@ -245,18 +223,7 @@
                         </div>
                     </div>
                     <div class="col-4">
-                        <div class="inactive-card rounded" v-if="isClicked == false">
-                            <h6 class="font-weight-bold">prova+1</h6>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, placeat?</p>
-                            <div class="identify d-flex flex-row">
-                                <img src="./src/img/testimonial-avata-02.jpg" alt="">
-                                <div class="text-container">
-                                    <h6 class="text-uppercase font-weight-bold">nome+1</h6>
-                                    <p>/ titolo+1</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="inactive-card rounded" v-else>
+                        <div class="inactive-card rounded" v-show="!isMore">
                             <h6 class="font-weight-bold">{{nextcard.title}}</h6>
                             <p>{{nextcard.comment}}</p>
                             <div class="identify d-flex flex-row">

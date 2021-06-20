@@ -14,8 +14,9 @@ const app = new Vue({
     el: "#app",
     components: { VueperSlides, VueperSlide },
     data: {
-        isClicked: false,
-        counter: 0,
+        isLess: false,
+        isMore: false,
+        counter: 1,
         currentcard: 1,
         prevcard: 0,
         nextcard: 2,
@@ -256,19 +257,23 @@ const app = new Vue({
 
     methods: {
         sliderSelector(index) {
-            this.isClicked = true;
             this.counter = index;
-            console.log(this.carouselCards.length);
-            console.log(index);
-            this.currentcard = this.carouselCards[index]
+            if (this.isMore === true && index !== 3) {
+                this.isMore = false;
+            } else if (this.isLess === true && index !== 0) {
+                this.isLess = false;
+            }
+            this.currentcard = this.carouselCards[this.counter]
             this.prevcard = this.carouselCards[(this.counter - 1)]
             this.nextcard = this.carouselCards[(this.counter + 1)]
             if (index === 3) {
-                this.nextcard = this.cleancard
                 this.prevcard = this.carouselCards[(this.counter - 1)]
+                this.nextcard = this.carouselCards[this.counter]
+                this.isMore = true;
             } else if (index === 0) {
-                this.prevcard = this.cleancard
                 this.nextcard = this.carouselCards[1]
+                this.prevcard = this.carouselCards[0]
+                this.isLess = true;
             }
         }
         ,
